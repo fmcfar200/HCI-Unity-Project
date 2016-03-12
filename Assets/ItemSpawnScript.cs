@@ -11,22 +11,13 @@ public class ItemSpawnScript : MonoBehaviour {
 	public List<GameObject> spawnObjects = new List<GameObject>();
 
 	public float startDelay = 1.5f;	//delay of start
-	GameObject gameManager;
-	ScoreScript playerScoreScript;
+
+
 	// Use this for initialization
 	void Start () {
-
-
+	
+		//starts the spawn coroutine.
 		StartCoroutine (SpawnObjects ());
-	}
-
-	public void SpeedUpAndLowerDelay(float speedUpAmount, float lowerDelayAmount)
-	{
-		for (int i = 0; i < spawnObjects.Count;i++)
-		{
-			spawnObjects[i].GetComponent<ItemScript>().speed += speedUpAmount;
-		}
-		spawnDelay -= lowerDelayAmount;
 	}
 	
 	// Update is called once per frame
@@ -47,10 +38,6 @@ public class ItemSpawnScript : MonoBehaviour {
 			Instantiate(spawnObjects[randomPrefabIndex] ,this.transform.position,Quaternion.identity);
 			yield return new WaitForSeconds(spawnDelay);
 			spawnAmount--;   //lowers the spawn amount 
-
-
 		}
 	}
-
-
 }
