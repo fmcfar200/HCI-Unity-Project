@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FoodScript : MonoBehaviour {
+public class ItemScript : MonoBehaviour {
 
 	public string itemType;
 	public float speed = 0.5f;

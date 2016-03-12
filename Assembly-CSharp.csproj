@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{EB58D716-9864-21C4-AFD8-A73C715E1E3D}</ProjectGuid>
+	<ProjectGuid>{554B5526-B9C7-1616-9849-8FA11120B865}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,10 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BinScript.cs" />
-     <Compile Include="Assets\FoodScript.cs" />
      <Compile Include="Assets\ItemEndScript.cs" />
+     <Compile Include="Assets\ItemScript.cs" />
      <Compile Include="Assets\ItemSpawnScript.cs" />
      <Compile Include="Assets\MenuScript.cs" />
+     <Compile Include="Assets\ScoreScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.8/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>
